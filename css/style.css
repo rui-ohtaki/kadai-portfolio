@@ -151,6 +151,16 @@ ul.contact li.button-more a {
     box-sizing: border-box;
 }
 
+ul.contact li.button-top a {
+    width: 200px;
+    height: 60px;
+    font-size: 2.4rem;
+    font-weight: 500;
+    line-height: 1.4;
+    background-color: #962715;
+    border-radius: 30px;
+    box-sizing: border-box;
+}
 
 /* Works部分
 ------------------------------------------------------------*/
