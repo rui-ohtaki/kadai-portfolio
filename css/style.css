@@ -37,6 +37,7 @@ a:hover {
     text-transform: uppercase;
 }
 
+
 h2 {
     margin: 0 0 80px;
     font-size: 4.8rem;
@@ -149,6 +150,66 @@ ul.contact li.button-more a {
     border-radius: 30px;
     box-sizing: border-box;
 }
+
+
+/* Works部分
+------------------------------------------------------------*/
+
+.works {
+    padding: 80px 0 180px;
+    background-color: #FFFFFF;
+}
+
+.works .container {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.works .container::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.works-box {
+    position: relative;
+    float: left;
+    width: 31%;
+    margin: 0 2% 40px 0;
+    color: #555;
+    background-color: #fff;
+    box-shadow: -16px 20px 16px rgba(0, 0, 0, 0.04);
+}
+
+.works-box:nth-of-type(3n) {
+    margin-right: 0;
+}
+
+.works-box img {
+    max-width: 100%;
+    vertical-align: bottom;
+}
+
+.works-box-inner {
+    height: 120px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.works-box-inner h3 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.works-box-inner span {
+    position: absolute;
+    bottom: 20px;
+    font-size: 1.2rem;
+    color: #BBC3C6;
+}
+
 /* Skills部分
 ------------------------------------------------------------*/
 
@@ -207,62 +268,97 @@ ul.contact li.button-more a {
     line-height: 2;
 }
 
-/* Works部分
+
+/* 経歴部分
 ------------------------------------------------------------*/
 
-.works {
-    padding: 80px 0 180px;
-    background-color: #FFFFFF;
+/*学歴*/
+.edu-container {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+.edu-box {
+    margin: 3% 10% 5% 10%;;
+    color: #555;
+    background-color: #fff;
+    box-sizing: border-box;
+    box-shadow: 16px 16px 16px rgba(0, 0, 0, 0.12);
+    padding: 10%;
 }
 
-.works .container {
+.edu-box p {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: #1e1e20;
+    margin: auto;
+    padding-bottom: 100px;
+}
+
+.edu-box:last-child {
+    padding-bottom: 0;
+}
+
+.date {
+    float: left;
+    padding-right: 83px;
+}
+
+/*社歴*/
+
+.car-container {
+    clear: both;
     max-width: 1080px;
     margin: 0 auto;
 }
 
-.works .container::after {
-    display: block;
-    content: "";
-    clear: both;
+.text-center-uppercase-car {
+    margin: 250px 0 80px 0;
+    font-size: 4.8rem;
+    font-weight: 300;
+    color: #BBC3C6;
+    letter-spacing: 0.5rem;
+    text-align: center;
 }
-
-.works-box {
-    position: relative;
-    float: left;
-    width: 31%;
-    margin: 0 2% 40px 0;
+.car-box {
+    margin: 3% 10% 5% 10%;
     color: #555;
     background-color: #fff;
-    box-shadow: -16px 20px 16px rgba(0, 0, 0, 0.04);
-}
-
-.works-box:nth-of-type(3n) {
-    margin-right: 0;
-}
-
-.works-box img {
-    max-width: 100%;
-    vertical-align: bottom;
-}
-
-.works-box-inner {
-    height: 120px;
-    padding: 20px;
     box-sizing: border-box;
+    box-shadow: 16px 16px 16px rgba(0, 0, 0, 0.12);
+    padding: 10%;
 }
 
-.works-box-inner h3 {
-    margin: 0;
-    font-size: 2rem;
-    font-weight: 700;
-    line-height: 1.5;
+.car-box p {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: #1e1e20;
+    margin: auto;
+    padding-bottom: 100px;
 }
 
-.works-box-inner span {
-    position: absolute;
-    bottom: 20px;
-    font-size: 1.2rem;
-    color: #BBC3C6;
+.car-box:last-child {
+    padding-bottom: 0;
+}
+
+.company-date {
+    float: left;
+    padding-right: 83px;
+}
+
+.company-name {
+     float: left;
+     padding-right: 83px;
+     width: 22%
+}
+.task-name {
+}
+
+.last {
+  padding: 0 0 0 0;
+  text-align: right;
+  margin: 0;
 }
 
 /* フッター部分
