@@ -49,13 +49,17 @@ h2 {
 /* ヘッダー部分
 ------------------------------------------------------------*/
 
-header {
+.header {
     padding-bottom: 100px;
     background-color: #FFFFFF;
+    z-index: 100;
 }
 
-.button-menu {
-    display: block; /* aタグをブロック要素として扱う */
+/*// ハンバーガーメニューボタン*/
+.nav-button {
+    display: block;
+    align-items: center;
+    justify-content: center;
     width: 32px; /* 幅 */
     height: 32px; /* 高さ */
     padding: 20px; /* 要素の内側の余白 */
@@ -63,7 +67,51 @@ header {
     font-size: 36px; /* フォントサイズ */
     line-height: 0; /* アイコンフォントの行の高さ */
     color: #BBC3C6; /* 文字色 */
+    cursor: pointer;
+    margin-right: 30px;
 }
+
+.nav-button :hover {
+    background-color: #1E1E20;
+    padding: 20px;
+}
+
+/*// SPナビゲーション*/
+
+.sp-nav {
+    position: absolute;
+    top: 6rem;
+    left: 0;
+    display: none;
+    z-index: 1000;
+    width: 100%;
+    padding: 4rem;
+    font-size: 2.4rem;
+    text-align: center;
+    background-color: rgba(255, 255, 255, .8);
+
+    box-sizing: border-box;
+}
+
+.sp-nav-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+}
+.sp-nav-list li {
+        margin-bottom: 4rem;
+    }
+    
+.sp-nav-list a {
+    margin-bottom: 4rem;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 80px;
+    font-weight: 400;
+    color: #BBC3C6;
+    }
+    
+    
 /* プロフィール部分
 ------------------------------------------------------------*/
 
@@ -112,6 +160,13 @@ ul.contact {
     padding: 0;
     margin-bottom: 180px;
 }
+
+@media (max-width:768px) { 
+    .contact {
+     width: max-content;
+}
+}
+
 
 ul.contact li {
     display: inline-block;
@@ -316,6 +371,9 @@ ul.contact li.button-top a {
 
 /*社歴*/
 
+.Career {
+    padding-bottom: 195px;
+}
 .car-container {
     clear: both;
     max-width: 1080px;
@@ -331,12 +389,12 @@ ul.contact li.button-top a {
     text-align: center;
 }
 .car-box {
-    margin: 3% 10% 5% 10%;
+    margin: 3% 10% 0% 10%;
     color: #555;
     background-color: #fff;
     box-sizing: border-box;
     box-shadow: 16px 16px 16px rgba(0, 0, 0, 0.12);
-    padding: 10%;
+    padding: 10% 10% 0 10%;
 }
 
 .car-box p {
@@ -370,6 +428,7 @@ ul.contact li.button-top a {
   text-align: right;
   margin: 0;
 }
+
 
 /* フッター部分
 ------------------------------------------------------------*/

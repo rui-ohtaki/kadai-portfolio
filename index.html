@@ -15,8 +15,20 @@
 </head>
 <body>
 	<header>
-		<a href="#menu" class="button-menu"><i class="fas fa-bars" aria-label="ハンバーガーメニュー"></i></a>
+		<div class="nav-button" id="nav-button">
+			<i class="fas fa-bars" aria-label="ハンバーガーメニュー"></i>
+		</div>
+		
+              <!-- SPナビゲーション -->
+       <nav class="sp-nav">
+           <ul class="sp-nav-list">
+               <li><a href="service.html">MORE</a></li>
+               <li><a href="news.html">SKILLS</a></li>
+               <li><a href="company.html">WORKS</a></li>
+           </ul>
+       </nav>
 	</header>
+	
 	<main>
 		<!-- プロフィール、Skills、Worksの内容が入ります -->
 		<section class="profile">
@@ -99,7 +111,7 @@
 				<div class="works-box-inner">
 					<h3>フロントエンド</h3><span>2016.04.20</span>
 				</div></a>
-				<a class="works-box" href="#comming_soon"><img alt="Java" src="./images/img_work_Java.png">
+				<a class="works-box" href="https://daily-report-system-ohtaki.herokuapp.com/login"><img alt="Java" src="./images/img_work_Java.png">
 				<div class="works-box-inner">
 					<h3>Java</h3><span>2021.04.20</span>
 				</div></a>
@@ -111,5 +123,8 @@
 	<footer>
 		<small class="text-center uppercase">&copy; Rui Ohtaki, All Rights Reserved.</small>
 	</footer>
+	<!-- JS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="./hamburger.js"></script>
 </body>
 </html>
