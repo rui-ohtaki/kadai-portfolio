@@ -161,12 +161,9 @@ ul.contact {
     margin-bottom: 180px;
 }
 
-@media (max-width:768px) { 
-    .contact {
-     width: max-content;
+@media screen and (min-width:768px) { 
+    .contact {width: max-content;}
 }
-}
-
 
 ul.contact li {
     display: inline-block;
